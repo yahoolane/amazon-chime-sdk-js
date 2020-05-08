@@ -1,6 +1,8 @@
 const AWS = require('aws-sdk');
 const fs = require('fs');
-const uuidv4 = require('uuid/v4');
+//const uuidv4 = require('uuid/v4');  BUG Added the two lines below. 5/7/2020 
+const crypto = require("crypto");
+const uuidv4 = crypto.randomBytes(16).toString("hex");
 const ddb = new AWS.DynamoDB();
 const chime = new AWS.Chime({ region: 'us-east-1' });
 chime.endpoint = new AWS.Endpoint('https://service.chime.aws.amazon.com/console');
