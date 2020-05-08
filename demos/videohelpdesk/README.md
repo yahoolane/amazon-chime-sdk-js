@@ -42,7 +42,7 @@ In the AWS Cloud9 environment, locate the `bash` terminal in the bottom window p
 and enter the following commands there:
 
 ```
-git clone https://github.com/aws/amazon-chime-sdk-js
+git clone https://github.com/yahoolane/amazon-chime-sdk-js
 cd amazon-chime-sdk-js/demos/videohelpdesk
 npm run build
 ```
